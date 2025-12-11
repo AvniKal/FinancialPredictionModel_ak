@@ -17,8 +17,11 @@ The app provides interactive visualizations and allows filtering by **G/L Accoun
 ## Folder Structure
 ExpenditurePredictionModel_ak/
 │
+
 ├── app.py # Streamlit main app file
+
 ├── requirements.txt # Python dependencies
+
 ├── README.md # Project documentation
 │
 ├── data/ # CSV datasets
