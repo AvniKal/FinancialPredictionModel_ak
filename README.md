@@ -14,20 +14,16 @@ The app provides interactive visualizations and allows filtering by **G/L Accoun
 
 ---
 
-## Folder Structure
-ExpenditurePredictionModel_ak/
-│
-├── app.py # Streamlit main app file
-├── requirements.txt # Python dependencies
-├── README.md # Project documentation
-│
-├── data/ # CSV datasets
-│ ├── MAV_Financial Planning Expenditure.csv
-│ └── MAV_Financial Planning Revenue.csv
-│
-├── notebooks/ # Jupyter or Google Colab notebooks (optional)
-│ └── revenue_preduction.ipynb
-  └── expenditure_prediction.ipynb
+FinancialPredictionModel_ak/
+├── notebooks/                              # Jupyter notebooks for experimentation
+│   ├── MAV_Financial Planning Expenditure.ipynb
+│   └── MAV_Financial Planning Revenue.ipynb
+|-- MAV_Financial Planning Expenditure.csv
+|-- MAV_Financial Planning Revenue.csv
+├── app.py                                  # Main Streamlit application file
+├── requirements.txt                        # Python dependencies
+└── README.md                               # Existing project documentation
+
 
 
 ---
