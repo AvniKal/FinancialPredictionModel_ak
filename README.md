@@ -16,14 +16,14 @@ The app provides interactive visualizations and allows filtering by **G/L Accoun
 
 FinancialPredictionModel_ak/<br>
 ~~~
-├── notebooks/                              # Jupyter notebooks for experimentation<br>
-│   ├── MAV_Financial Planning Expenditure.ipynb<br>
-│   └── MAV_Financial Planning Revenue.ipynb<br>
-|-- MAV_Financial Planning Expenditure.csv<br>
-|-- MAV_Financial Planning Revenue.csv<br>
-├── app.py                                  # Main Streamlit application file<br>
-├── requirements.txt                        # Python dependencies<br>
-└── README.md                               # Existing project documentation<br>
+├── notebooks/                              # Jupyter notebooks for experimentation
+│   ├── MAV_Financial Planning Expenditure.ipynb
+│   └── MAV_Financial Planning Revenue.ipynb
+|-- MAV_Financial Planning Expenditure.csv
+|-- MAV_Financial Planning Revenue.csv
+├── app.py                                  # Main Streamlit application file
+├── requirements.txt                        # Python dependencies
+└── README.md                               # Existing project documentation
 
 ~~~
 
