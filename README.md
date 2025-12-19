@@ -14,7 +14,8 @@ The app provides interactive visualizations and allows filtering by **G/L Accoun
 
 ---
 
-FinancialPredictionModel_ak/
+FinancialPredictionModel_ak/<br>
+~~~
 ├── notebooks/                              # Jupyter notebooks for experimentation<br>
 │   ├── MAV_Financial Planning Expenditure.ipynb<br>
 │   └── MAV_Financial Planning Revenue.ipynb<br>
@@ -24,7 +25,7 @@ FinancialPredictionModel_ak/
 ├── requirements.txt                        # Python dependencies<br>
 └── README.md                               # Existing project documentation<br>
 
-
+~~~
 
 ---
 
