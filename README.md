@@ -29,17 +29,57 @@ FinancialPredictionModel_ak/<br>
 
 ---
 
-## Installation
+## Setup & Running
 
 ### **1. Clone the Repository**
 ```bash
 git clone https://github.com/AvniKal/ExpenditurePredictionModel_ak.git
 cd ExpenditurePredictionModel_ak
+```
 
-### **2.Install Dependencies**
+### **2. Install Dependencies**
+```bash
 pip install -r requirements.txt
+```
 
-### **3.Run the Streamlit App**
+### **3. Run the Streamlit App**
+```bash
 streamlit run app.py
+```
+
+## API Reference
+
+Start the API server:
+    uvicorn api.main:app --reload --port 8000
+
+Interactive docs: http://localhost:8000/docs
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| /health | GET | Health check |
+| /recommend | POST | Auto-recommend modeling config |
+| /forecast | POST | Generate future forecast |
+| /backtest | POST | Run walk-forward model race |
+| /anomalies | POST | Detect residual anomalies |
+| /explain | POST | LLM explanation for anomaly |
+
+Example — explain the April 2020 anomaly:
+    curl -X POST "http://localhost:8000/explain" \
+      -H "Content-Type: application/json" \
+      -d '{"series_id":"RSXFS","anomaly_date":"2020-04-01","threshold_std":2.5}'
+
+<!--
+- Built end-to-end AI forecasting tool with FastAPI REST backend
+  (6 endpoints) and Streamlit frontend; decoupled via HTTP API layer
+- Implemented walk-forward backtesting engine across 5 models
+  (ARIMA, SARIMAX, Prophet, XGBoost, Naïve); ARIMA achieved 42%
+  MASE improvement over naïve baseline on 25-year FRED retail dataset
+- Developed rule-based recommender that auto-selects forecast horizon,
+  training size, and candidate models from series characteristics
+  (trend strength, seasonality, structural breaks)
+- Integrated Groq Llama-3.1 API for anomaly explanation with structured
+  output parsing, exponential backoff retry, and graceful fallback handling
+-->
+
 
 

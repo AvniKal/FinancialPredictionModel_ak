@@ -1,0 +1,5 @@
+.env
+__pycache__/
+.venv/
+scratch/
+requirements_full.txt
